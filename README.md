@@ -1,20 +1,53 @@
-# Cafe Sales – Dirty Data Cleaning Project
+# ☕ Cafe Sales – Data Cleaning & Feature Engineering Project
 
-### - Data Source
+## Project Overview
 
-The dataset is publicly available on Kaggle:  
-🔗 [Kaggle: Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
+This project demonstrates core **data cleaning** and **feature engineering** techniques using a small-scale, intentionally "dirty" dataset.
 
-### - About the Dataset
+> 💡 **Note:** The dataset used here is **artificially generated** and does **not represent real-world sales data**.  
+> Its purpose is solely to **showcase technical skills** in preparing raw data for analysis or machine learning pipelines.
 
-This dataset contains 10,000 rows of synthetic cafe sales transactions. It was intentionally designed to be "dirty" — with missing values, inconsistent formatting, and data quality issues — to simulate real-world data cleaning challenges. It provides an ideal use case for practicing data cleaning, preprocessing, and feature engineering techniques.
+## Purpose of This Project
 
-### - Project Goal
+This project is a portfolio piece created to:
 
-The dataset is not analysis-ready. The goal of this project is to perform data cleaning and transformation to make the dataset suitable for further analysis. Key tasks include:
+- demonstrate technical skills in raw data processing,
+- follow best practices in notebook structure and documentation
 
-- Replacing invalid string values (e.g., `"error"`, `"unknown"`, `"nan"`) with proper missing value indicators (`NaN`)
-- Handling missing values appropriately
-- Cleaning textual data (e.g., removing extra characters, standardizing values)
-- Parsing and transforming date-related columns into structured features
-- Converting column data types to appropriate formats
+## Dataset
+
+- **Source:** [Kaggle – Cafe Sales Dirty Data](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
+- **Rows:** 10,000
+- **Content:** Simulated cafe sales transactions including items, prices, dates, locations, and payment methods.
+- **Issues:** Includes typical data quality problems like:
+  - missing values,
+  - inconsistent text formats,
+  - incorrect data types,
+  - ambiguous placeholders like `"error"`, `"unknown"`, etc.
+
+## Technologies Used
+
+- Python
+- Pandas, NumPy
+- Jupyter Notebook
+
+## Project Structure
+
+```text
+├── data/
+│   ├── raw/                    # Original CSV from Kaggle
+│   ├── prep/                   # Cleaned dataset (after data cleaning)
+│   └── features/               # Feature-engineered version of the dataset
+│
+├── notebook/
+│   ├── 01_intro.ipynb          # Project overview and initial data inspection
+│   ├── 02_data_cleaning.ipynb  # Cleaning missing values, formatting, and types
+│   └── 03_feature_engineering.ipynb  # New features based on transaction data
+│
+├── venv/                       # Local virtual environment (excluded from Git)
+│
+├── .gitignore
+├── LICENSE.txt
+├── README.md
+└── requirements.txt
+```
